@@ -211,6 +211,7 @@ button {
   border:1px solid  var(--ligth-gray-color);
   animation: rotate 2s infinite;
   cursor: pointer;
+  outline: none;
 }
 @keyframes rotate {
   0% {
