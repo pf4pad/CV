@@ -30,8 +30,8 @@ body {
 }
 
 .right-column {
-  width: 58%;
-  padding: 40px;
+  width: 100%;
+  padding: 25px; 
 }
 
 header {
@@ -122,7 +122,7 @@ main :not(.contacts) ul {
 
 .about-myself p {
   margin-bottom: 10px;
-  margin-left: 45px;
+  padding-left: 45px;
 }
 
 .about-myself p:last-of-type {
@@ -138,13 +138,22 @@ main :not(.contacts) ul {
   color: var(--ligth-gray-color);
   border-bottom: 2px solid var(--ligth-gray-color);
 }
+.right-column h4{
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--ligth-gray-color);
+  
+}
+
 
 .right-column img {
   vertical-align: middle;
   margin-right: 15px;
 }
 
-.right-column p {
+.right-column p,
+.heading-desc {
   color: var(--ligth-gray-color);
 }
 
@@ -176,14 +185,7 @@ main :not(.contacts) ul {
   margin-left: 45px;
 }
 
-pre {
-  margin-left: -320px;
-  margin-top: 20px;
-  padding-left: 30px;
-  font-family: monospace;
-  font-size: 0.9rem;
-  background-color: #f5f5f5;
-}
+
 
 footer {
   display: flex;
@@ -209,10 +211,14 @@ footer .github-icon {
   align-items: center;
 }
 
+
 @media (max-width: 1200px) {
   .container {
+    margin: 0 auto;
+    max-width: 100%;
     padding: 0 10px;
-      }
+  }
+  
   .two-columns {
   flex-direction: column;
   }
@@ -221,13 +227,30 @@ footer .github-icon {
   }
 
   .right-column {
-  width: 100%;
+  
+  width:fit-content;
+  padding: 0;
+  margin-top: 15px;  
   }
   main ul {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-}
+  }
+  .right-column h3{
+    flex: none;
+    
+  }
+
+  .about-myself{
+    width: 100%;
+  }
+  .about-myself p,
+  .code-example p,
+  .education p{
+    font-size: 16px;
+    padding-right: 25px;
+  }
 
 }
 @media (max-width: 680px) {
@@ -236,5 +259,8 @@ footer .github-icon {
   flex-direction: column;
  
 }
-
+  .right-column {
+    padding: 0; 
+}
+  
 }

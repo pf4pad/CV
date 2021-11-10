@@ -1,12 +1,11 @@
-// const arr = 
-function peak(arr) {
+const svgPath = document.querySelectorAll('.path');
 
-  for (let i = 1; i < arr.length - 1; i++) {
-    let leftSum = arr.slice(0, i).reduce((accumulator, currentValue) => accumulator + currentValue);
-    let rightSum = arr.slice(i + 1).reduce((accumulator, currentValue) => accumulator + currentValue);
-
-    if (leftSum === rightSum) return i;
-  }
-  return -1;
-}
-console.log(peak([36, 37, 38, 39]))
+const svgText = anime({
+  targets: svgPath,
+  loop: true,
+  direction: 'alternate',
+  strokeDashoffset: [anime.setDashoffset, 0],
+  easing: 'easeInOutSine',
+  duration: 700,
+  delay: (el, i) => { return i * 500 }
+});
