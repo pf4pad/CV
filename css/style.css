@@ -186,7 +186,31 @@ main :not(.contacts) ul {
   margin-left: 45px;
 }
 
+textarea {
+  display: flex;
+  margin: 10px auto;
+  width: 80%;
+  height:max-content;
+  border: 1px solid #BBB;
+  border-radius: 4px;
+  color: #444;
+  font-size: inherit;
+  font-family: inherit;
+  overflow: auto;
+  padding: 10px;
+}
 
+button {
+  display: flex;
+  background-color: inherit;
+  color: var(--ligth-gray-color);
+  margin-top: 20px 0;
+  padding: 10px 20px;
+  margin: 10px auto;
+  font-size: inherit;
+  border-radius: 10px;
+  border:1px solid  var(--ligth-gray-color);
+}
 
 footer {
   display: flex;
