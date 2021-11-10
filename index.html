@@ -124,11 +124,11 @@
             <h3>Code example</h3>
           </div>
           <textarea id="textExample">
-            Ladipisci facere natus rerum unde maxime illum sit. 
-            
-            Blanditiis minima deserunt repudiandae maiores non, 
-            
-            nihil vel dolor rem, obcaecati ratione iure!
+ animate({duration: 1000, timing(timeFraction) {
+return timeFraction;},
+
+  draw(progress) {elem.style.width = progress * 100 + '%';}
+});
           </textarea>
 
           <button onclick="animateText(textExample)">Click me</button>
