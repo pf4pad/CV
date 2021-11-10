@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+
+<body>
+  <div class="container">
+    <div class="two-columns">
+      <div class="left-column">
+        <header>
+          <img src="./images/Avatar.png" alt="Portrait" width="204" height="204">
+          <h1>Pavlo Cherevach</h1>
+          <h2>Junior Frontend Developer</h2>
+        </header>
+        <main>
+          <section class="contacts">
+            <h3>Contacts</h3>
+            <ul>
+              <li>
+                <img src="./images/phone.svg" alt="Phone Icon" width="30" height="30">
+                <p><a href="tel:+380678414251">+38 (067) 841425</a>1</p>
+              </li>
+              <li>
+                <img src="./images/email.svg" alt="Email Icon" width="30" height="30">
+                <p>pavel.cherevach@gmail.com</p>
+              </li>
+              <li>
+                <img src="./images/telegram.svg" alt="Telegram Icon" width="30" height="30">
+                <p>@Pagestudio</p>
+              </li>
+              <li>
+                <img src="./images/linkedin.svg" alt="LinkedIn Icon" width="30" height="30">
+                <a
+                  href="https://www.linkedin.com/in/%D1%87%D0%B5%D1%80%D0%B5%D0%B2%D0%B0%D1%87-%D0%BF%D0%B0%D0%B2%D0%B5%D0%BB-729254b3/">LinkedIn</a>
+              </li>
+            </ul>
+          </section>
+          <section class="skills">
+            <h3>Skills</h3>
+            <ul>
+              <li>HTML5, CSS3</li>
+              <li>JavaScript Basics</li>
+              <li>Git, GitHub</li>
+              <li>VS Code</li>
+              <li>Adobe Photoshop, Figma</li>
+
+            </ul>
+          </section>
+          <section class="languages">
+            <h3>Languages</h3>
+            <ul>
+              <li>
+                <p class="language-name">English</p>
+                <p>Pre-intermediate</p>
+              </li>
+              <li>
+                <p class="language-name">Russian</p>
+                <p>Native</p>
+              </li>
+              <li>
+                <p class="language-name">Ukrainian</p>
+                <p>Intermediate</p>
+              </li>
+            </ul>
+          </section>
+        </main>
+      </div>
+      <aside class="right-column">
+        <section class="about-myself">
+          <div class="sub-header">
+            <img src="./images/user.svg" alt="About Myself Icon" width="30" height="30">
+            <h3>About Myself</h3>
+          </div>
+          <p>At the moment I hold the position of "Mechatronic" Arcelor Mittal Kryvyi Rih, Department of Automation of
+            Technological Processes. Before I held the position of "Leading Engineer of the Process Control System" for
+            a long time.
+            My responsibilities include maintenance of instrumentation sensors and blast furnace No. 9 operation control
+            system. Equipment manufactured by Siemens (instrumentation) and Allen-Bradley, Rockwell Automation (APCS) is
+            used.
+            LAD, STL, FBD programming languages are applied.
+            Periodically, there is also a need to change the logic of the mechanisms.
+          </p>
+          <p>I participated in the project of putting into operation a system of pulverized coal injection into a blast
+            furnace in order to save natural gas. The system was designed and implemented by Danieli Corus. I worked as
+            part of an international development team (Netherlands, Italy, Canada). I participated in setting up
+            software localization. At the moment in my current position I do not see any growth and development of
+            myself as a specialist.
+          </p>
+          <p>I am interested in Web development. And I want to develop myself in this direction. I train HTML, CSS, JS
+            on my own. I
+            am familiar with technologies GULP, SASS, Bootstrap, GIT, SVG, Figma.</p>
+        </section>
+        <section class="education">
+          <div class="sub-header">
+            <img src="./images/education.svg" alt="Education Icon" width="30" height="30">
+            <h3>Education</h3>
+          </div>
+          <p><strong>Krivoy Rog Technical University</strong></p>
+          <p>Electrical engineering faculty of Electric Drive and Automation</p>
+          <p>Years: 1995 - 2000</p>
+          <p>Specialization: Engineer electromechanic</p>
+        </section>
+        <section class="courses">
+          <div class="sub-header">
+            <img src="./images/courses.svg" alt="Courses" width="30" height="30">
+            <h3>Courses</h3>
+          </div>
+          <ul>
+            <li>HTML and CSS Tutorials on w3schools</li>
+            <li>JavaScript Manual on learnjavascript.ru</li>
+          </ul>
+          <img class="score-img" src="./images/w3schools-score_small.jpg" alt="W3schools Score" width="500">
+        </section>
+        <section class="code-example">
+          <div class="sub-header">
+            <img src="./images/code.svg" alt="Code Icon" width="30" height="30">
+            <h3>Code example</h3>
+          </div>
+          <p><strong>Peak array index KATA from CODEWARS:</strong> Given an array of ints, return the index such that
+            the sum of the elements to the right of that index equals the sum of the elements to the
+            left of that index. If there is no such index, return -1. If there is more than one such index, return the
+            left-most index.</p>
+          <pre>            <code>
+function peak(arr) {
+
+  for (let i = 1; i &lt; arr.length - 1; i++) {
+    let leftSum = arr.slice(0, i).reduce((accumulator, currentValue) =&gt; accumulator + currentValue);
+    let rightSum = arr.slice(i + 1).reduce((accumulator, currentValue) =&gt; accumulator + currentValue);
+
+    if (leftSum === rightSum) return i;
+  }
+  return -1;
+}</code>
+          </pre>
+        </section>
+      </aside>
+    </div>
+    <footer>
+      <a class="my-github" href="https://github.com/pf4pad">
+        <img class="github-icon" src="./images/github.svg" alt="Github Icon" width="26" height="26">
+        <p>Visit my GitHub</p>
+      </a>
+      <p>© 2021</p>
+      <a href="https://rs.school/js/">
+        <img src="./images/" alt="Rsschool Icon" width="73" height="26">
+      </a>
+    </footer>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
